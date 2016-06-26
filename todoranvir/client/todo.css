@@ -1,0 +1,59 @@
+*{
+	padding : 0px;
+	margin : 0px;
+}
+body{
+	background : url("home.jpg");
+	background : cover;
+	font-family:ubuntu;
+}
+/*designs for header.html starts here*/
+
+/* Login and signup buttons designed*/
+#LogIn, #signUp{
+	float : right;
+	line-height : 30px; 
+	width : 120px;
+	margin : 2px 0px 0px 10px;
+}
+/*navigation menu should have a color on hovering*/
+#nav-list li:hover{
+	border-bottom: 2px solid #d9534f;
+}
+
+/*design for header.html ends here*/
+
+/*design for createtask.html starts here*/
+#main-column{
+	background:#e7e7e7;
+}
+#create-task{
+	margin-top:60px;
+	margin-bottom:20px;
+}
+#create-task div:nth-child(1n+0){
+	margin:20px 60px 20px 60px;
+	font-size:24px;
+}
+#create-task input{
+	margin-top:20px;
+	height:40px;
+}
+#create-task select{
+	margin-top:20px;
+	height:40px;
+}
+#create-task button{
+	width:200px;
+	float:right;
+	margin:20px 0px 20px 60px;
+}
+
+
+/*design for createtask.html ends here*/
+
+
+
+/*design for footer.html starts here*/
+
+/*design for footer.html ends here*/

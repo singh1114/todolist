@@ -1,0 +1,27 @@
+<template name="createtask">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12" id="main-column">
+				<!--{{#if currentUser}}-->
+					<div id="create-task">
+						<div>Task Name<input class="form-control" type="text" placeholder="give a task name"></div>
+						<div>Completion Time<input class="form-control" type="text" placeholder="total completion time"></div>
+						<div>Priority(1-10)<input class="form-control" type="text" placeholder="priority must be between 1-10"></div>
+						<div>Category
+							<select class="form-control" id="exampleSelect1">
+						        <option>1</option>
+						        <option>2</option>
+						        <option>3</option>
+						        <option>4</option>
+						        <option>5</option>
+					        </select>
+					    </div>
+						<button type="button" class="btn btn-primary">Add the task</button>
+					</div>
+				<!--{{else}}
+
+				{{/if}}-->
+			</div>
+		</div>
+	</div>
+</template>
