@@ -1,11 +1,32 @@
 <template name="yourList">
-	<div class="row">
-		<div class="col-md-10">
-			{{#if currentUser}}
-				
-			{{else}}
+	<div class="container" id="alltogether">
+		<div class="row">
+			<div class="col-md-12" id="main-column">
+				<!--{{#if currentUser}}-->
+					<div id="task_list">
+						<h3>Your Task List</h3>	
+						<table class = "table table-striped">   
+						   <thead>
+						      <tr>
+						         <th>Task Name</th>
+						         <th>Completion Time</th>
+						         <th>Priority</th>
+						         <th>Category</th>
+						         <th></th>
+						      </tr>
+						   </thead>   
+						   <tbody>
+						   	    {{#each tasks}}
+						   	    	{{> createRow}}
+						   	    {{/each}}
+						   </tbody>
+						   
+						</table>
+					</div>
+				<!--{{else}}
 
-			{{/if}}
+				{{/if}}-->
+			</div>
 		</div>
 	</div>
 </template>

@@ -7,6 +7,9 @@ body{
 	background : cover;
 	font-family:ubuntu;
 }
+#alltogether{
+	margin-top:80px;
+}
 /*designs for header.html starts here*/
 
 /* Login and signup buttons designed*/
@@ -28,8 +31,16 @@ body{
 	background:#e7e7e7;
 }
 #create-task{
-	margin-top:60px;
+	margin-top:0px;
 	margin-bottom:20px;
+}
+#time-select1,#time-select2{
+	width:45%;
+	margin:auto;
+	display:inline-block;
+}
+#create-task select:nth-child(2n+1){
+	float:right;
 }
 #create-task div:nth-child(1n+0){
 	margin:20px 60px 20px 60px;

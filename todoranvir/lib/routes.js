@@ -1,7 +1,7 @@
-FlowRouter.route('/',{
+FlowRouter.route('/your_list',{
 	action: function() {
 		BlazeLayout.render('bodyTemplate', {
-			get : 'home'
+			get : 'yourList'
 		});
 	}
 });
@@ -11,4 +11,11 @@ FlowRouter.route('/createtask', {
     	get: 'createtask'
     });
   }
+});
+FlowRouter.route('/', {
+	action: function() {
+		BlazeLayout.render('bodyTemplate',{
+			get: 'taglines'
+		});
+	}
 });

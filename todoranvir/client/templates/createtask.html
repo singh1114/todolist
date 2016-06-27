@@ -1,22 +1,37 @@
 <template name="createtask">
-	<div class="container">
+	<div class="container" id="alltogether">
 		<div class="row">
 			<div class="col-md-12" id="main-column">
 				<!--{{#if currentUser}}-->
 					<div id="create-task">
-						<div>Task Name<input class="form-control" type="text" placeholder="give a task name"></div>
-						<div>Completion Time<input class="form-control" type="text" placeholder="total completion time"></div>
-						<div>Priority(1-10)<input class="form-control" type="text" placeholder="priority must be between 1-10"></div>
-						<div>Category
-							<select class="form-control" id="exampleSelect1">
-						        <option>1</option>
-						        <option>2</option>
-						        <option>3</option>
-						        <option>4</option>
-						        <option>5</option>
-					        </select>
-					    </div>
-						<button type="button" class="btn btn-primary">Add the task</button>
+						<form class="new-task" id="new-task">
+							<div>Task Name<input class="form-control" type="text" placeholder="give a task name" name="task-name" id="task-name"></div>
+							<div>Completion Time<br/>
+							<select class="form-control" id="time-select1" name="in-numbers">
+							        <option>1</option>
+							        <option>2</option>
+							        <option>3</option>
+							        <option>4</option>
+							        <option>5</option>
+						        </select>
+						        <select class="form-control" id="time-select2" name="unit">
+							        <option>Minutes</option>
+							        <option>Hours</option>
+							        <option>Days</option>
+							        <option>Months</option>
+						        </select></div>
+							<div>Priority(1-10)<input class="form-control" type="text" placeholder="priority must be between 1-10" id="priority"></div>
+							<div>Category
+								<select class="form-control" id="category">
+							        <option>1</option>
+							        <option>2</option>
+							        <option>3</option>
+							        <option>4</option>
+							        <option>5</option>
+						        </select>
+						    </div>
+							<button type="submit" class="btn btn-primary">Add the task</button>
+						</form>
 					</div>
 				<!--{{else}}
 
