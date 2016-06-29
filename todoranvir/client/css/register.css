@@ -1,0 +1,27 @@
+.col-md-6{
+	margin-top: 70px;
+	background : #e7e7e7;
+}
+#new-member p{
+	font-size : 24px;
+	margin-top : 20px;
+}
+#new-member input{
+	height : 40px;
+	width : 80%;
+	margin-top : 20px;
+}
+#new-member button{
+	float : right;
+	width : 30%;
+	margin : 20px 20px 20px 20px;
+	height : 40px;
+	background : #DC143C;
+	border : 2px solid #DC143C;
+	color : white;
+	font-size : 20px;
+}
+#new-member button:hover{
+	background : #153439;
+	border : 2px solid #153439;
+}

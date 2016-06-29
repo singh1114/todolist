@@ -19,3 +19,17 @@ FlowRouter.route('/', {
 		});
 	}
 });
+FlowRouter.route('/register',{
+	action: function() {
+		BlazeLayout.render('bodyTemplate',{
+			get: 'register'
+		});
+	} 
+});
+FlowRouter.route('/login',{
+	action: function(){
+		BlazeLayout.render('bodyTemplate',{
+			get : "login"
+		});
+	}
+});

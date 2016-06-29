@@ -1,0 +1,10 @@
+/* Login and signup buttons designed*/
+#LogIn, #signUp{
+	float : right;
+	width : 120px;
+	margin : 3px 0px 0px 15px;
+	background : #DC143C;
+	height : 44px;
+	border : 2px solid #DC143C;
+
+}

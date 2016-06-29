@@ -12,13 +12,6 @@ body{
 }
 /*designs for header.html starts here*/
 
-/* Login and signup buttons designed*/
-#LogIn, #signUp{
-	float : right;
-	line-height : 30px; 
-	width : 120px;
-	margin : 2px 0px 0px 10px;
-}
 /*navigation menu should have a color on hovering*/
 #nav-list li:hover{
 	border-bottom: 2px solid #d9534f;

@@ -22,7 +22,7 @@ Template.createtask.events({
     });
 
     //Empty the fields in the end
-    $('#task-name').val() = " ";
+    //$('#task-name').val() = " ";  
     //$('#time-select1').val() = " ";
  
     return false;//reloading stopped
