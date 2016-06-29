@@ -22,8 +22,11 @@ Template.createtask.events({
     });
 
     //Empty the fields in the end
-    //$('#task-name').val() = " ";  
-    //$('#time-select1').val() = " ";
+    $('#task-name').val(' ');  
+    $('#time-select1').val(' ');
+    $("#time-select2").val(" ");
+    $("#priority").val(" ");
+    $("#category").val(" ");
  
     return false;//reloading stopped
     

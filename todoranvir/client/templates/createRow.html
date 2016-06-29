@@ -1,9 +1,10 @@
 <template name="createRow">
 	<tr>
 		<td>{{ taskName}}</td>
-		<td>{{ timeinNumbers}} {{ timeUnit}}</td>
+		<td id="time">{{ timeinNumbers}} {{ timeUnit}}</td>
 		<td>{{ Priority}}</td>
 		<td>{{ Category}}</td>
-		<td><button type="button" class="btn btn-danger">Remove</button></td>
+		<td><button type="button" class="remove">Remove</button></td>
+		<td><button type="button" class="time-start">Start time</button></td>
 	</tr>
 </template>
