@@ -19,7 +19,7 @@ Template.createRow.events({
 			}
 		}
 		timevar = aftertime(timevar);
-		var milmin = parseInt(60*1000);
+		var milmin = parseInt(2*1000);
 		var tostopit = setInterval(function(){timevar = aftertime(timevar);},milmin);
 	}
 });

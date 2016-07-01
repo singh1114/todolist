@@ -9,7 +9,8 @@ Template.createtask.events({
     var timeSelect2 = $('#time-select2').val();
     var Priority = $('#priority').val();
     var Category = $('#category').val();
-    
+    var userobj = Meteor.user();
+    var usernamevar = userobj.username;
 
     // Insert a task into the collection
     Tasks.insert({
@@ -18,6 +19,7 @@ Template.createtask.events({
       timeUnit : timeSelect2,
       Priority : Priority,
       Category : Category,
+      username : usernamevar,
       createdAt: new Date() // current time
     });
 

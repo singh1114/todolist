@@ -5,17 +5,19 @@
 			      <a class="navbar-brand" href="#"><strong>Ranvir's Todo</strong></a>
 			    </div>
 			    <ul class="nav navbar-nav" id="nav-list">
-				    <li class="active"><a href="#">Home</a></li>
-				    <li><a href="your_list">yourList</a></li>
+				    <li class="active"><a href="/">Home</a></li>
+				    {{#if currentUser}}
+				    <li><a href="/your_list">yourList</a></li>
 				    <li><a href="/createtask">Create List</a></li>
 			        <li><a href="#">Share List</a></li> 
+			        {{/if}}
 			    </ul>
-			    <!--{{#if currentUser}}-->
-			    	<button type="button" class="login" id="logOut"><strong>Log out</strong></button>
-			    <!--{{else}}
+			    {{#if currentUser}}
+			    	<button type="button" class="logout" id="logOut"><strong>Log out</strong></button>
+			    {{else}}
 				    <button type="button" class="signup" id="signUp"><strong>Sign up</strong></button>
 				    <button type="button" class="login" id="LogIn"><strong>Log In</strong></button>
-				{{/if}}-->
+				{{/if}}
 		    </div>
 		</nav>
 </template>

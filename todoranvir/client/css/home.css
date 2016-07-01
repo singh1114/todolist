@@ -1,0 +1,27 @@
+#mainlines{
+	background : #34434D;
+	height : 100vh;
+	padding-top : 50px;
+	text-align : center;
+}
+.col-md-12 .indentation{
+	margin : 30vh 80px 0px 80px;
+	color : white;
+}
+.indentation #main-line{
+	font-size : 56px;
+	text-transform: uppercase;
+}
+.indentation p{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.indentation h2{
+	font-size : 22px;
+	text-transform: uppercase;
+}
+.indentation #last-line{
+	font-size : 20px;
+	margin-top : 20px;
+}
+

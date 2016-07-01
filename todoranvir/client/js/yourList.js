@@ -1,5 +1,9 @@
 Template.yourList.helpers({
 	tasks: function() {
-		return Tasks.find();
+		var userobj = Meteor.user();
+   		var usernamevar = userobj.username;
+		var usnamevar = Tasks.find({username:usernamevar});
+		var x = usnamevar.fetch();
+		return x;
 	}
 });

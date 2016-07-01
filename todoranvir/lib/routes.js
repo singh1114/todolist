@@ -15,7 +15,7 @@ FlowRouter.route('/createtask', {
 FlowRouter.route('/', {
 	action: function() {
 		BlazeLayout.render('bodyTemplate',{
-			get: 'taglines'
+			get: 'home'
 		});
 	}
 });
@@ -29,7 +29,7 @@ FlowRouter.route('/register',{
 FlowRouter.route('/login',{
 	action: function(){
 		BlazeLayout.render('bodyTemplate',{
-			get : "login"
+			get : "logIn"
 		});
 	}
 });

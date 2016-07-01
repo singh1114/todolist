@@ -2,7 +2,7 @@
 	<div class="container" id="alltogether">
 		<div class="row">
 			<div class="col-md-12" id="main-column">
-				<!--{{#if currentUser}}-->
+				{{#if currentUser}}
 					<div id="task_list">
 						<h3>Your Task List</h3>	
 						<table class = "table table-striped">   
@@ -19,14 +19,16 @@
 						   <tbody>
 						   	    {{#each tasks}}
 						   	    	{{> createRow}}
+						   	    {{else}}
+						   	    	<h1>There is No task please create a task first.</h1>
 						   	    {{/each}}
 						   </tbody>
 						   
 						</table>
 					</div>
-				<!--{{else}}
-
-				{{/if}}-->
+				{{else}}
+					<h1>You need to login first.</h1>
+				{{/if}}
 			</div>
 		</div>
 	</div>
