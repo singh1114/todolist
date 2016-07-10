@@ -1,0 +1,29 @@
+<template name="githubapi">
+	<div class="container" id="alltogether">
+		<div class="row">
+			<div class="col-md-12" id="main-column">
+				{{#if currentUser}}
+					<div class="githubapi">
+						<form class="githubapiform">
+							<div>
+								<p> The GitHub username</p>
+								<input type="text" name="githubun" class="form-control" placeholder="Your Github username" id="githubusername">
+							</div>	
+							<div>
+								<p> Repository Name</p>
+								<input type="text" name="githubrn" class="form-control" placeholder="The GitHub Repository Name" id="githubreponame">
+								<button type="button" class="showallissues">Show All Issues</button>
+							</div>	
+						</form>
+						<div id="check"></div>
+						<div class="showIssues">
+							{{> Template.dynamic template=showissues}}
+						</div>
+					</div>
+				{{else}}
+					<h5>You have no permission to see this feature.</h5>
+				{{/if}}
+			</div>
+		</div>
+	</div>
+</template>

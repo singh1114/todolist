@@ -33,3 +33,17 @@ FlowRouter.route('/login',{
 		});
 	}
 });
+FlowRouter.route('/githubapi',{
+	action: function(){
+		BlazeLayout.render('bodyTemplate',{
+			get : "githubapi"
+		});
+	}
+});
+FlowRouter.route('/githubapi/issues',{
+	action: function(){
+		BlazeLayout.render('githubapi',{
+			showissues: "issues"
+		});
+	}
+});

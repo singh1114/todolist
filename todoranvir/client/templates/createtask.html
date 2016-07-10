@@ -2,7 +2,7 @@
 	<div class="container" id="alltogether">
 		<div class="row">
 			<div class="col-md-12" id="main-column">
-				<!--{{#if currentUser}}-->
+				{{#if currentUser}}
 					<div id="create-task">
 						<form class="new-task" id="new-task">
 							<div>Task Name<input class="form-control" type="text" placeholder="give a task name" name="task-name" id="task-name"></div>
@@ -33,9 +33,9 @@
 							<button type="submit" class="btn btn-primary">Add the task</button>
 						</form>
 					</div>
-				<!--{{else}}
-
-				{{/if}}-->
+				{{else}}
+					<h4>The content that you want to see is for logged In users. <br/><br/>Therefore login first.</h4>
+				{{/if}}
 			</div>
 		</div>
 	</div>

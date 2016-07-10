@@ -22,6 +22,7 @@ Template.createtask.events({
       username : usernamevar,
       createdAt: new Date() // current time
     });
+    alert("Task added");
 
     //Empty the fields in the end
     $('#task-name').val(' ');  
